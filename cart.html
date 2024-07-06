@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="cakes" id="cakes">
+        <h3 class="title">Our <span>Cakes</span></h3>
+        <div class="wrapper">
+            <!-- Cake items -->
+            <div class="cake-card">
+                <img src="images/cakes/cake1.jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="300">Add to Cart</button>
+            </div>
+    
+    
+            <div class="cake-card">
+                <img src="images/cakes/cake2.jpg" alt="">
+                <h3>Ice Cake</h3>
+                <div class="price">₹400/-</div>
+                <button class="add-to-cart" data-name="Ice Cake" data-price="400">Add to Cart</button>
+            </div>
+    
+            <div class="cake-card">
+                <img src="images/cakes/cake1.jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="300">Add to Cart</button>
+            </div>
+    
+            <div class="cake-card">
+                <img src="images/cakes/cake1.jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="300">Add to Cart</button>
+            </div>
+    
+            <div class="cake-card">
+                <img src="images/cakes/cake1.jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="300">Add to Cart</button>
+            </div>
+    
+            <div class="cake-card">
+                <img src="images/cakes/cake1.jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="300">Add to Cart</button>
+            </div>
+    
+            <div class="cake-card">
+                <img src="images/cakes/cake1.jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="300">Add to Cart</button>
+            </div>
+    
+            <div class="cake-card">
+                <img src="images/cakes/cake1.jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="300">Add to Cart</button>
+            </div>
+    
+            <div class="cake-card">
+                <img src="images/cakes/cake1.jpg" alt="">
+                <h3>Chocolate Cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="add-to-cart" data-name="Chocolate Cake" data-price="300">Add to Cart</button>
+            </div>
+    
+    
+    
+    
+    
+        </div>
+    </section>
+    
+    <div class="cart">
+        <h3 class="title">Your <span>Cart</span></h3>
+        <ul class="cart-items"></ul>
+        <div class="total-price">Total: ₹<span id="total">0</span>/-</div>
+    </div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/brownie.jpg" alt="">
+            <div class="content">
+                <h3>Yummy Brownie</h3>
+                <div class="price">₹105/-</div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cakes/cake1.jpg" alt="">
+            <div class="content">
+                <h3>Chocolate Cake</h3>
+                <div class="price">₹300/-</div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cheesecake/cheesecake2.jpg" alt="">
+            <div class="content">
+                <h3>Lemon Cheesecake</h3>
+                <div class="price">₹500/-</div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/macroons1.jpg" alt="">
+            <div class="content">
+                <h3>Rainbow Cookies</h3>
+                <div class="price">/-</div>
+            </div>
+        </div> -->
+        <!-- <a href="" class="btn">order now</a>
+
+    </div>
+
+</body>
+</html>  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes Page</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style for the main section containing cakes */
+        .cakes {
+            padding: 20px;
+        }
+
+        /* Style for the title */
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Style for the cake cards */
+        .cake-card {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .cake-card img {
+            max-width: 100%;
+        }
+
+        /* Style for cake name */
+        .cake-card h3 {
+            margin-top: 10px;
+        }
+
+        /* Style for the price */
+        .cake-card .price {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Style for the 'add to cart' button */
+        .cake-card .btn {
+            display: block;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .cake-card .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <section class="cakes" id="cakes">
+        <h3 class="title">Our <span>Cakes</span></h3>
+        <div class="wrapper">
+            
+            <!--  item 1 -->
+            <div class="cake-card">
+                <img src="images/cakes/cake1.jpg" alt="Chocolate Cake">
+                <h3>Chocolate cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <!-- item 2 -->
+            <div class="cake-card">
+                <img src="images/cakes/cake2.jpg" alt="Ice cake">
+                <h3>Ice cake</h3>
+                <div class="price">₹400/- <span>₹500</span></div>
+                <button class="btn">Add to Cart</button>            
+            </div>
+
+            <!-- item 3  -->
+            <div class="cake-card">
+                <img src="images/cakes/wedding1.jpg" alt="Wedding cake">
+                <h3>Wedding cake</h3>
+                <div class="price">₹600/- <span>₹800</span></div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <!--  item 4 -->
+            <div class="cake-card">
+                <img src="images/cakes/redvelvet.jpg" alt="Red Velvet cake">
+                <h3>Red Velvet cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <!-- item 5 -->
+            <div class="cake-card">
+                <img src="images/cakes/blackforest.jpg" alt="Black Forest cake">
+                <h3>Black Forest cake</h3>
+                <div class="price">₹400/- <span>₹500</span></div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <!-- item 6  -->
+            <div class="cake-card">
+                <img src="images/cakes/fruitcake.jpeg" alt="Fruit cake">
+                <h3>Fruit cake</h3>
+                <div class="price">₹600/- <span>₹800</span></div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <!--  item 7 -->
+            <div class="cake-card">
+                <img src="images/cakes/kitkatcake.jpg" alt="Kit Kat cake">
+                <h3>Kit Kat cake</h3>
+                <div class="price">₹300/-</div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <!-- item 8 -->
+            <div class="cake-card">
+                <img src="images/cakes/mixedfruitdry.jpg" alt="Mixed Fruit Delicious Dry Cake">
+                <h3>Mixed Fruit Delicious Dry Cake</h3>
+                <div class="price">₹400/- <span>₹500</span></div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+            <!-- item 9  -->
+            <div class="cake-card">
+                <img src="images/cakes/rainbowsprinklescake.jpg" alt="Rainbow Sprinkle cake">
+                <h3>Rainbow Sprinkle cake</h3>
+                <div class="price">₹600/- <span>₹800</span></div>
+                <button class="btn">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const addToCartButtons = document.querySelectorAll('.cake-card .btn');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Added to cart');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- <script>
+    // JavaScript
+    const cart = [];
+
+    function addToCart(name, price) {
+        cart.push({ name, price });
+        updateCartUI();
+    }
+
+    function removeFromCart(index) {
+        cart.splice(index, 1);
+        updateCartUI();
+    }
+
+    function updateCartUI() {
+        const cartContainer = document.getElementById('cart');
+        cartContainer.innerHTML = '';
+
+        if (cart.length === 0) {
+            cartContainer.innerHTML = '<p>Cart is empty</p>';
+        } else {
+            cart.forEach((item, index) => {
+                cartContainer.innerHTML += `
+                    <div>
+                        <span>${item.name}</span>
+                        <span>${item.price}</span>
+                        <button onclick="removeFromCart(${index})">Remove</button>
+                    </div>
+                `;
+            });
+        }
+    }
+</script>
+
+ -->
